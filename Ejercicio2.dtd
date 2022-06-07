@@ -1,0 +1,7 @@
+<!ELEMENT listapedidos (pedido*)>
+<!ATTLIST listapedidos version CDATA #FIXED "1.1">
+<!ATTLIST listapedidos xml:lang (es|en) #REQUIRED>
+<!ELEMENT pedido (numeroSerie, cantidad, peso?)>
+<!ELEMENT numeroSerie (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
